@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   # about path, linked with controller action, doesn't show controller name :)
   get 'about', to: 'pages#about'
+
+  # creates routes for edit, delete, post, get, put and patch article
+  resources :articles
 end
