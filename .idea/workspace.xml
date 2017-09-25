@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b0f63c-9fb7-43fc-a543-774dfbf7b82b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +50,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,7 +136,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="RailsProjectView" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -277,6 +276,21 @@
               <item name=".idea" type="cbb8eebc:String" user=".idea" />
               <item name="dataSources" type="cbb8eebc:String" user="dataSources" />
               <item name="4c7c1c1c-1d75-427a-aa8e-aa8567af9e63" type="cbb8eebc:String" user="4c7c1c1c-1d75-427a-aa8e-aa8567af9e63" />
+              <item name="_metadata_" type="cbb8eebc:String" user="_metadata_" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="The Rails Framework" type="cbb8eebc:String" user="The Rails Framework" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+              <item name="dataSources" type="cbb8eebc:String" user="dataSources" />
+              <item name="d1003993-9dbb-4345-a3fe-13222839865f" type="cbb8eebc:String" user="d1003993-9dbb-4345-a3fe-13222839865f" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="The Rails Framework" type="cbb8eebc:String" user="The Rails Framework" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+              <item name="dataSources" type="cbb8eebc:String" user="dataSources" />
+              <item name="d1003993-9dbb-4345-a3fe-13222839865f" type="cbb8eebc:String" user="d1003993-9dbb-4345-a3fe-13222839865f" />
               <item name="_metadata_" type="cbb8eebc:String" user="_metadata_" />
             </path>
             <path>
@@ -565,12 +579,12 @@
       <workItem from="1506171112247" duration="97000" />
       <workItem from="1506181563205" duration="949000" />
       <workItem from="1506185463574" duration="16022000" />
-      <workItem from="1506292057027" duration="19743000" />
+      <workItem from="1506292057027" duration="20565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44619000" />
+    <option name="totallyTimeSpent" value="45441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -995,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
