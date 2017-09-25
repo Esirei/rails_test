@@ -23,4 +23,5 @@
 .byebug_history
 
 # My custom ignores
-/app/views/articles/_form.html.erb.orig
+*.orig
+*.bak
