@@ -36,7 +36,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     # added articles variable to enable pagination of articles
-    @articles = @user.articles.paginate(page: params[:page], per_page: 5)
+    @user_articles = @user.articles.paginate(page: params[:page], per_page: 5)
   end
 
   private
