@@ -15,4 +15,7 @@ Rails.application.routes.draw do
 
   # creates routes for edit, delete, post, get, put and patch article
   resources :articles
+
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 end
