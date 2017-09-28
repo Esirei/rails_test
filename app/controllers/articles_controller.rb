@@ -1,6 +1,12 @@
 
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[edit show update destroy]
+  before_action :require_user, except: [:index, :show]
+  # before_action :require_same_user, only: [:edit, :update, :destroy]
+
+  before_action only: [:edit, :update, :destroy] do
+    require_same_user(@article.user, 'You can only edit or delete your own article')
+  end
 
   def new
     @article = Article.new
@@ -25,6 +31,8 @@ class ArticlesController < ApplicationController
 
   def edit
     # @article = Article.find(params[:id])
+    # changed to a before_action require_same_user
+    # redirect_to articles_path unless current_user.eql? @article.user
   end
 
   def update
@@ -60,4 +68,11 @@ class ArticlesController < ApplicationController
   def article_params
     params.require(:article).permit(:title, :description)
   end
+
+  # def require_same_user
+  #   unless current_user.eql? @article.user
+  #     flash[:danger] = 'You can only edit or delete your own article'
+  #     redirect_to user_path(current_user)
+  #   end
+  # end
 end
