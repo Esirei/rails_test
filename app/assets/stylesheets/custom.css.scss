@@ -13,7 +13,7 @@ $navbar-default-bg: #0B2644;
 }
 
 #logo:hover {
-  color: white;
+  //color: white;
   text-decoration: none;
 }
 
@@ -34,6 +34,10 @@ $navbar-default-bg: #0B2644;
 .btn-xlarge {
   font-size: x-large;
   background-color: black;
+}
+
+.navbar-nav li a {
+  color: black;
 }
 
 .listing {
