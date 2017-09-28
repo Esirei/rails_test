@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
 
-  before_action :set_user, only: [:edit, :update, :show]
+  before_action :set_user, only: [:edit, :update, :show, :destroy]
 
   # before_action only: [:edit, :update, :destroy] do
   #   require_same_user(@user, 'You can only edit or delete your own account')
   # end
 
   before_action -> { require_same_user(@user, 'You can only edit your own account') }, only: [:edit, :update, :destroy]
+  before_action :require_admin, only: [:destroy]
 
   def index
     # @users = User.all
@@ -48,6 +49,12 @@ class UsersController < ApplicationController
     @user_articles = @user.articles.paginate(page: params[:page], per_page: 5)
   end
 
+  def destroy
+    @user.destroy
+    flash[:danger] = 'User and all articles created by user has been deleted'
+    redirect_to root_path
+  end
+
   private
 
   def set_user
@@ -56,5 +63,12 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:username, :email, :password)
+  end
+
+  def require_admin
+    unless logged_in? and current_user.admin?
+      flash[:danger] = 'Only admin users can perform that action'
+      redirect_to user_path(@user)
+    end
   end
 end

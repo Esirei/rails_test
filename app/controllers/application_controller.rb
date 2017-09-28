@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_same_user(user, msg)
-    unless current_user.eql? user
+    unless current_user.eql?(user) || current_user.admin?
       flash[:danger] = msg
       redirect_to user_path(current_user)
     end
