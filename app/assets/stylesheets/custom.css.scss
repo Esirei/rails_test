@@ -17,6 +17,14 @@ $navbar-default-bg: #0B2644;
   text-decoration: none;
 }
 
+.navbar-nav li a {
+  color: white !important;
+}
+
+.dropdown-menu li a {
+  color: black !important;
+}
+
 .jumbotron {
   background-image: asset_url('bg_jumbotron.jpg');
   background-size: cover;
@@ -34,10 +42,6 @@ $navbar-default-bg: #0B2644;
 .btn-xlarge {
   font-size: x-large;
   background-color: black;
-}
-
-.navbar-nav li a {
-  color: black;
 }
 
 .listing {
