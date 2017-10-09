@@ -49,6 +49,17 @@ $navbar-default-bg: #0B2644;
   padding-left: 0;
 }
 
+.badge {
+  background-color: #CEF6F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 .article-title {
   font-weight: bold;
   font-size: 1.5em;

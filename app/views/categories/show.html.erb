@@ -1,0 +1,7 @@
+<h1 class="text-center"><%= "Category: #{@category.name}" %></h1>
+
+<%= render('shared/paginate', obj: @category_articles) %>
+
+<%= render('articles/article', obj: @category_articles) %>
+
+<%= render('shared/paginate', obj: @category_articles) %>
