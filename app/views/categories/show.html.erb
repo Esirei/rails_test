@@ -1,5 +1,9 @@
 <h1 class="text-center"><%= "Category: #{@category.name}" %></h1>
 
+<% if logged_in? && current_user.admin? %>
+  <p class="text-center"><span class="badge"><%= link_to 'Edit Category Name', edit_category_path(@category) %></span></p>
+<% end %>
+
 <%= render('shared/paginate', obj: @category_articles) %>
 
 <%= render('articles/article', obj: @category_articles) %>
