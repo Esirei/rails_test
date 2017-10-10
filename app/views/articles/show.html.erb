@@ -17,13 +17,14 @@
     <hr>
     <p> <%= simple_format(@article.description) %></p>
 
-    <% if @article.categories.any? %>
-    <p>Categories:
-      <% @article.categories.each do |category| %>
-        <span class="badge"><%= link_to "#{category.name}", category_path(category) %></span>
-      <% end %>
-    </p>
-    <% end %>
+
+    <%# if @article.categories.any? %>
+      <!--<p>Categories:-->
+        <%# @article.categories.each do |category| %>
+          <!--<span class="badge"><%= link_to "#{category.name}", category_path(category) %></span>-->
+        <%# end %>
+      <!--</p>-->
+    <%# end %>
 
     <% if @article.categories.any? %>
       <p>Categories: <%= render @article.categories %></p>
